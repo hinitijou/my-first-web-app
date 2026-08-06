@@ -1,0 +1,14 @@
+.header {
+  display: flex; /* 親要素をFlexboxにする */
+  justify-content: space-between; /* 左にロゴ、右にメニューを離して配置！ */
+  align-items: center; /* 上下の中央に綺麗に揃える！ */
+  padding: 15px 30px;
+  background-color: #f8f9fa;
+}
+
+/* メニューの文字も横並びにする */
+.header ul {
+  display: flex; /* ulも親要素にして横並びにする！ */
+  gap: 20px; /* 要素間のスキマを一括で20px空ける現代の超便利プロパティ！ */
+  list-style: none; /* リストの箇条書きポッチ（•）を消す */
+}
