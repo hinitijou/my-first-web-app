@@ -1,14 +1,48 @@
-.header {
-  display: flex; /* 親要素をFlexboxにする */
-  justify-content: space-between; /* 左にロゴ、右にメニューを離して配置！ */
-  align-items: center; /* 上下の中央に綺麗に揃える！ */
-  padding: 15px 30px;
-  background-color: #f8f9fa;
+/* ブラウザで設定されているスタイルのリセット・共通設定 */
+/* 消さないでください */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li,
+form,
+input,
+textarea,
+select,
+button {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
 }
 
-/* メニューの文字も横並びにする */
-.header ul {
-  display: flex; /* ulも親要素にして横並びにする！ */
-  gap: 20px; /* 要素間のスキマを一括で20px空ける現代の超便利プロパティ！ */
-  list-style: none; /* リストの箇条書きポッチ（•）を消す */
+ul {
+  list-style: none;
+}
+/* スタイルのリセット終了 */
+
+/* サイドバーとメインコンテンツを包むための要素のスタイルを書いてください */
+/* サイドバーとメインコンテンツを包むための要素のスタイルを書いてください */
+body > * {
+  display: flex;
+  height: 100vh;
+}
+
+/* サイドバーに関連するスタイルを書いてください */
+.sidebar {
+  width: 250px;
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+/* メインコンテンツに関連するスタイルを書いてください */
+.main-content {
+  flex: 1;
+  padding: 20px;
 }
