@@ -4,12 +4,44 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="wrapper">
-      <!-- bodyの直下の子要素 -->
-      <aside class="sidebar">こんにちは、サイドバーです。</aside>
-      <main class="main-content">Hello、ここはメインコンテンツです。</main>
-    </div>
+    <div class="dashboard-container"></div>
+    <aside>
+      <header>
+        <a href="#" class="home-link" data-tab="home">
+          <span class="ri-home-line"></span>
+          <span>home</span>
+        </a>
+      </header>
+    </aside>
+    <main>
+      <section id="home">
+        <header>
+          <div class="prof-icon">
+            <span class="ri-user-smile-line"></span>
+          </div>
+          <h1>Welcome to Your Personal Dashboard</h1>
+          <h2>Make your daily life more convenient and enjoyable</h2>
+        </header>
+        <div>
+          <p>
+            This dashboard is a tool to enrich your daily life. You can easily
+            use essential features such as diary entries, memo management, and
+            checking weather information.
+          </p>
+          <p>
+            Small daily records become irreplaceable memories, and efficient
+            task management leads to fulfilling days. Please use this as a
+            partner that supports your everyday life.
+          </p>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
